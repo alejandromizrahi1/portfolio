@@ -178,8 +178,10 @@
 
     /* PORTFOLIO */
     .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
-    .portfolio-card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; transition: all 0.35s; }
-    .portfolio-card:hover { border-color: var(--border-hover); transform: translateY(-6px); box-shadow: 0 25px 60px rgba(59,130,246,0.1); }
+    .portfolio-card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; transition: all 0.35s; display: block; text-decoration: none; color: inherit; cursor: pointer; }
+    .portfolio-card:hover { border-color: var(--border-hover); transform: translateY(-6px); box-shadow: 0 25px 60px rgba(59,130,246,0.15); }
+    .p-live-btn { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.9rem; font-size: 0.78rem; font-weight: 700; color: #60a5fa; transition: gap 0.2s; }
+    .portfolio-card:hover .p-live-btn { gap: 0.65rem; }
     .p-thumb {
       height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center;
       gap: 0.6rem; position: relative; overflow: hidden;
@@ -431,7 +433,7 @@
     </div>
     <div class="portfolio-grid">
 
-      <div class="portfolio-card reveal">
+      <a href="https://pool-cleaning-company-miami.vercel.app" target="_blank" rel="noopener" class="portfolio-card reveal">
         <div class="p-thumb" style="background:linear-gradient(135deg,#0c2340,#1e3a8a,#0284c7)">
           <div class="p-thumb-icon">🏊</div>
           <div class="p-thumb-name">Azure Miami Pools</div>
@@ -440,10 +442,11 @@
           <h3>Azure Miami Pools</h3>
           <p>Full multi-page site — hero, pricing tiers, before/after slider, reviews, service areas, FAQ & WhatsApp widget.</p>
           <div class="p-tags"><span class="p-tag">React</span><span class="p-tag">TypeScript</span><span class="p-tag">Local SEO</span><span class="p-tag">Lead Gen</span></div>
+          <div class="p-live-btn">View Live Site →</div>
         </div>
-      </div>
+      </a>
 
-      <div class="portfolio-card reveal">
+      <a href="https://manny-pool-services.vercel.app" target="_blank" rel="noopener" class="portfolio-card reveal">
         <div class="p-thumb" style="background:linear-gradient(135deg,#0a1628,#164e63,#0891b2)">
           <div class="p-thumb-icon">🌊</div>
           <div class="p-thumb-name">Manny Pool Services</div>
@@ -452,10 +455,11 @@
           <h3>Manny Pool Services</h3>
           <p>Conversion-optimized landing page with AI-written copy, trust bar, contact form, and animated sections.</p>
           <div class="p-tags"><span class="p-tag">React</span><span class="p-tag">AI Copy</span><span class="p-tag">Animations</span></div>
+          <div class="p-live-btn">View Live Site →</div>
         </div>
-      </div>
+      </a>
 
-      <div class="portfolio-card reveal">
+      <a href="https://cutler-pools.vercel.app" target="_blank" rel="noopener" class="portfolio-card reveal">
         <div class="p-thumb" style="background:linear-gradient(135deg,#1a053a,#3730a3,#4f46e5)">
           <div class="p-thumb-icon">💎</div>
           <div class="p-thumb-name">Cutler Pools LLC</div>
@@ -464,10 +468,11 @@
           <h3>Cutler Pools LLC</h3>
           <p>Premium brand site with certifications section, before/after gallery, Google Maps embed, and reviews carousel.</p>
           <div class="p-tags"><span class="p-tag">React</span><span class="p-tag">Maps API</span><span class="p-tag">SEO</span></div>
+          <div class="p-live-btn">View Live Site →</div>
         </div>
-      </div>
+      </a>
 
-      <div class="portfolio-card reveal">
+      <a href="https://pool-website-2-seven.vercel.app" target="_blank" rel="noopener" class="portfolio-card reveal">
         <div class="p-thumb" style="background:linear-gradient(135deg,#062019,#065f46,#059669)">
           <div class="p-thumb-icon">☀️</div>
           <div class="p-thumb-name">Fort Lauderdale Pool Pros</div>
@@ -476,10 +481,11 @@
           <h3>Fort Lauderdale Pool Pros</h3>
           <p>Full-service Broward County site with pricing, FAQ, service areas map, and floating WhatsApp CTA button.</p>
           <div class="p-tags"><span class="p-tag">React</span><span class="p-tag">WhatsApp CTA</span><span class="p-tag">Local SEO</span></div>
+          <div class="p-live-btn">View Live Site →</div>
         </div>
-      </div>
+      </a>
 
-      <div class="portfolio-card reveal">
+      <a href="https://sapphire-pools-website.vercel.app" target="_blank" rel="noopener" class="portfolio-card reveal">
         <div class="p-thumb" style="background:linear-gradient(135deg,#1a1000,#78350f,#d97706)">
           <div class="p-thumb-icon">🌴</div>
           <div class="p-thumb-name">Sunny Blue Pool Cleaners</div>
@@ -488,10 +494,11 @@
           <h3>Sunny Blue Pool Cleaners</h3>
           <p>Mobile-first, bright branding with booking flow, service area section, and conversion-optimized layout.</p>
           <div class="p-tags"><span class="p-tag">React</span><span class="p-tag">Mobile-first</span><span class="p-tag">Booking UX</span></div>
+          <div class="p-live-btn">View Live Site →</div>
         </div>
-      </div>
+      </a>
 
-      <div class="portfolio-card reveal">
+      <a href="https://tedesa-website.vercel.app" target="_blank" rel="noopener" class="portfolio-card reveal">
         <div class="p-thumb" style="background:linear-gradient(135deg,#0f172a,#1e3a5f,#2563eb)">
           <div class="p-thumb-icon">🏗️</div>
           <div class="p-thumb-name">TEDESA</div>
@@ -500,8 +507,9 @@
           <h3>TEDESA — B2B Services</h3>
           <p>Bilingual EN/ES corporate website with multi-page navigation, Vercel deployment, and professional B2B branding.</p>
           <div class="p-tags"><span class="p-tag">Next.js</span><span class="p-tag">Bilingual</span><span class="p-tag">Vercel</span><span class="p-tag">B2B</span></div>
+          <div class="p-live-btn">View Live Site →</div>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>
